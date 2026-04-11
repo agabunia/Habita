@@ -1,3 +1,3 @@
 export default function ProjectsPage() {
-  return <div>Projects page</div>;
+  return <div>Projects page To Be Added</div>;
 }
