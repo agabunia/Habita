@@ -7,7 +7,7 @@ export const navItems: NavItem[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { label: "Facebook", href: "#", content: "f" },
-  { label: "Instagram", href: "#", content: "◎" },
-  { label: "LinkedIn", href: "#", content: "in" },
+  { label: "Facebook", href: "https://www.facebook.com/", content: "f" },
+  { label: "Instagram", href: "https://www.instagram.com/", content: "◎" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/", content: "in" },
 ];

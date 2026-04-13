@@ -13,6 +13,8 @@ export default function HeaderActions({ phone }: HeaderActionsProps) {
           href={link.href}
           className={styles.iconLink}
           aria-label={link.label}
+          target="_blank"
+          rel="noreferrer"
         >
           <span>{link.content}</span>
         </a>
