@@ -1,22 +1,8 @@
-import { NavLink } from "react-router-dom";
 import styles from "./Header.module.css";
-
-type NavItem = {
-  label: string;
-  to: string;
-};
-
-const navItems: NavItem[] = [
-  { label: "მთავარი გვერდი", to: "/" },
-  { label: "დეველოპერები", to: "/developers" },
-  { label: "პროექტები", to: "/projects" },
-];
-
-type HeaderProps = {
-  userName?: string;
-  userId?: string;
-  phone?: string;
-};
+import type { HeaderProps } from "./header.types";
+import ProfileCard from "./ProfileCard";
+import HeaderNav from "./HeaderNav";
+import HeaderActions from "./HeaderActions";
 
 export default function Header({
   userName = "Gigi Nikoleishvili",
@@ -31,53 +17,12 @@ export default function Header({
           <div className={styles.logoBox}>LOGO</div>
         </div>
 
-        <div className={styles.profileCard}>
-          <div className={styles.profileText}>
-            <span className={styles.profileName}>{userName}</span>
-            <span className={styles.profileId}>ID: {userId}</span>
-          </div>
-
-          <div className={styles.profileIcon} aria-hidden="true">
-            <span>👤</span>
-          </div>
-        </div>
+        <ProfileCard userName={userName} userId={userId} />
       </div>
 
       <div className={styles.bottomRow}>
-        <nav className={styles.nav} aria-label="Main navigation">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              className={({ isActive }) =>
-                isActive
-                  ? `${styles.navLink} ${styles.navLinkActive}`
-                  : styles.navLink
-              }
-            >
-              {item.label}
-            </NavLink>
-          ))}
-        </nav>
-
-        <div className={styles.actions}>
-          <a href="#" className={styles.iconLink} aria-label="Facebook">
-            <span>f</span>
-          </a>
-
-          <a href="#" className={styles.iconLink} aria-label="Instagram">
-            <span>◎</span>
-          </a>
-
-          <a href="#" className={styles.iconLink} aria-label="LinkedIn">
-            <span>in</span>
-          </a>
-
-          <a href={`tel:${phone.replace(/\s+/g, "")}`} className={styles.phoneLink}>
-            <span className={styles.phoneIcon}>📞</span>
-            <span>{phone}</span>
-          </a>
-        </div>
+        <HeaderNav />
+        <HeaderActions phone={phone} />
       </div>
     </header>
   );
