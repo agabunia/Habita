@@ -2,14 +2,6 @@ import { useMemo, useState } from "react";
 import "./ProjectsShowcase.css";
 import { featuredProjects, type ProjectCard as FeaturedProject } from "./projectsShowcase.mock";
 
-type NewestProject = {
-  id: number;
-  imageText: string;
-  title: string;
-  meta: string;
-  location: string;
-};
-
 const projectImages = import.meta.glob("../../../../assets/home/project_images/*", {
   eager: true,
   import: "default",
@@ -20,52 +12,8 @@ function getProjectImageUrl(imageLocation: string) {
   return projectImages[`../../../../assets/home/project_images/${imageLocation}`];
 }
 
-const newestProjects: NewestProject[] = [
-  {
-    id: 1,
-    imageText: "Dummy image text",
-    title: "Dummy title",
-    meta: "Dummy text",
-    location: "Dummy location",
-  },
-  {
-    id: 2,
-    imageText: "Dummy image text",
-    title: "Dummy title",
-    meta: "Dummy text",
-    location: "Dummy location",
-  },
-  {
-    id: 3,
-    imageText: "Dummy image text",
-    title: "Dummy title",
-    meta: "Dummy text",
-    location: "Dummy location",
-  },
-  {
-    id: 4,
-    imageText: "Dummy image text",
-    title: "Dummy title",
-    meta: "Dummy text",
-    location: "Dummy location",
-  },
-  {
-    id: 5,
-    imageText: "Dummy image text",
-    title: "Dummy title",
-    meta: "Dummy text",
-    location: "Dummy location",
-  },
-  {
-    id: 6,
-    imageText: "Dummy image text",
-    title: "Dummy title",
-    meta: "Dummy text",
-    location: "Dummy location",
-  },
-];
-
 const FEATURED_PROJECTS_PER_PAGE = 5;
+const NEWEST_PROJECTS_LIMIT = 6;
 
 function DotsButton({
   activePage,
@@ -144,10 +92,21 @@ function FeaturedProjectCard({ project }: { project: FeaturedProject }) {
   );
 }
 
-function NewProjectCard({ project }: { project: NewestProject }) {
+function NewProjectCard({ project }: { project: Pick<FeaturedProject, "id" | "image_location"> }) {
+  const imageUrl = getProjectImageUrl(project.image_location);
+
   return (
-    <article className="projects-showcase_new-card" aria-label={project.title}>
-      <span>{project.imageText}</span>
+    <article className="projects-showcase_new-card" aria-label={`Newest project ${project.id}`}>
+      {imageUrl ? (
+        <img
+          src={imageUrl}
+          alt=""
+          className="projects-showcase_new-image"
+          loading="lazy"
+        />
+      ) : (
+        <span>{project.image_location}</span>
+      )}
     </article>
   );
 }
@@ -160,6 +119,7 @@ export default function ProjectsShowcase() {
 
     return featuredProjects.slice(startIndex, startIndex + FEATURED_PROJECTS_PER_PAGE);
   }, [activeFeaturedPage]);
+  const newestProjects = featuredProjects.slice(0, NEWEST_PROJECTS_LIMIT);
 
   return (
     <section className="projects-showcase" aria-labelledby="projects-showcase-title">
@@ -188,7 +148,7 @@ export default function ProjectsShowcase() {
           </div>
 
           <a href="/projects" className="projects-showcase_view-link">
-            Dummy link
+            ყველას ნახვა
           </a>
         </div>
 
