@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import "./ProjectsShowcase.css";
 import { featuredProjects, type ProjectCard as FeaturedProject } from "./projectsShowcase.mock";
 
@@ -64,15 +65,34 @@ const newestProjects: NewestProject[] = [
   },
 ];
 
-function DotsButton() {
+const FEATURED_PROJECTS_PER_PAGE = 5;
+
+function DotsButton({
+  activePage,
+  pageCount,
+  onPageChange,
+}: {
+  activePage: number;
+  pageCount: number;
+  onPageChange: (page: number) => void;
+}) {
   return (
-    <button className="projects-showcase_dots" type="button" aria-label="More featured projects">
-      <span />
-      <span />
-      <span />
-      <span />
-      <span />
-    </button>
+    <div className="projects-showcase_dots" aria-label="Featured projects pages">
+      {Array.from({ length: pageCount }, (_, page) => (
+        <button
+          key={page}
+          className={
+            page === activePage
+              ? "projects-showcase_dot projects-showcase_dot-active"
+              : "projects-showcase_dot"
+          }
+          type="button"
+          aria-label={`Show featured projects page ${page + 1}`}
+          aria-pressed={page === activePage}
+          onClick={() => onPageChange(page)}
+        />
+      ))}
+    </div>
   );
 }
 
@@ -133,16 +153,28 @@ function NewProjectCard({ project }: { project: NewestProject }) {
 }
 
 export default function ProjectsShowcase() {
+  const [activeFeaturedPage, setActiveFeaturedPage] = useState(0);
+  const featuredPageCount = Math.ceil(featuredProjects.length / FEATURED_PROJECTS_PER_PAGE);
+  const visibleFeaturedProjects = useMemo(() => {
+    const startIndex = activeFeaturedPage * FEATURED_PROJECTS_PER_PAGE;
+
+    return featuredProjects.slice(startIndex, startIndex + FEATURED_PROJECTS_PER_PAGE);
+  }, [activeFeaturedPage]);
+
   return (
     <section className="projects-showcase" aria-labelledby="projects-showcase-title">
       <div className="projects-showcase_panel projects-showcase_featured-panel">
         <div className="projects-showcase_panel-header">
           <h2 id="projects-showcase-title">Featured Projects</h2>
-          <DotsButton />
+          <DotsButton
+            activePage={activeFeaturedPage}
+            pageCount={featuredPageCount}
+            onPageChange={setActiveFeaturedPage}
+          />
         </div>
 
         <div className="projects-showcase_featured-grid">
-          {featuredProjects.map((project) => (
+          {visibleFeaturedProjects.map((project) => (
             <FeaturedProjectCard key={project.id} project={project} />
           ))}
         </div>

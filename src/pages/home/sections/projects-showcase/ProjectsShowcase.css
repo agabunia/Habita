@@ -54,17 +54,20 @@
   min-width: 48px;
   min-height: 32px;
   justify-content: center;
+}
+
+.projects-showcase_dot {
+  width: 4px;
+  height: 4px;
   padding: 0;
   border: 0;
-  background: transparent;
+  border-radius: 50%;
+  background: #c4c4c4;
   cursor: pointer;
 }
 
-.projects-showcase_dots span {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #c4c4c4;
+.projects-showcase_dot-active {
+  background: #5a5a5a;
 }
 
 .projects-showcase_featured-grid {
