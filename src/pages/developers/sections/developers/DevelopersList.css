@@ -21,7 +21,7 @@
 .developers-list_logo-wrap {
   display: grid;
   place-items: center;
-  width: min(100%, 104px);
+  width: clamp(112px, 12vw, 150px);
   aspect-ratio: 1;
   overflow: hidden;
   border: 1px solid #000000;
@@ -99,7 +99,7 @@
   }
 
   .developers-list_logo-wrap {
-    width: min(100%, 98px);
+    width: clamp(104px, 34vw, 132px);
   }
 
   .developers-list_name {
