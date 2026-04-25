@@ -1,0 +1,13 @@
+.developers-page {
+  width: min(100% - 48px, 880px);
+  margin: 24px auto 52px;
+  color: #242424;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .developers-page {
+    width: min(100% - 24px, 880px);
+    margin-top: 18px;
+  }
+}

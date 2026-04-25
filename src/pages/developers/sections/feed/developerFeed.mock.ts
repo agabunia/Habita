@@ -6,18 +6,18 @@ export type DevelopersFeed = {
 export const developersFeed: DevelopersFeed[] = [
   {
     id: 1,
-    logo_location: 'feed_1.jpg'
+    logo_location: "feed_1.jpg",
   },
   {
     id: 2,
-logo_location: 'feed_1.jpg'
+    logo_location: "feed_1.jpg",
   },
   {
     id: 3,
-    logo_location: 'feed_1.jpg'
+    logo_location: "feed_1.jpg",
   },
   {
     id: 4,
-    logo_location: 'feed_1.jpg'
-  }
+    logo_location: "feed_1.jpg",
+  },
 ];
