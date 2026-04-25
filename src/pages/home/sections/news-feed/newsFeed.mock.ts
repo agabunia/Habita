@@ -3,6 +3,7 @@ export type NewsFeedItem = {
   title: string;
   excerpt: string;
   image_location: string;
+  logo_location: string;
   brand: string;
   brandLabel: string;
   brandMark: string;
@@ -18,7 +19,8 @@ export const newsFeedItems: NewsFeedItem[] = [
     title: "აქ იქნება სტატიის სათაური",
     excerpt:
       "Living spaces where quality, comfort, and thoughtful design come together to shape the life you deserve.",
-    image_location: "news-card-1.jpg",
+    image_location: "img_4.jpg",
+    logo_location: "logo_1.jpg",
     brand: "Gldani",
     brandLabel: "group",
     brandMark: "2020",
@@ -32,7 +34,8 @@ export const newsFeedItems: NewsFeedItem[] = [
     title: "აქ იქნება სტატიის სათაური",
     excerpt:
       "Living spaces where quality, comfort, and thoughtful design come together to shape the life you deserve.",
-    image_location: "news-card-2.jpg",
+    image_location: "img_6.jpg",
+    logo_location: "logo_2.jpg",
     brand: "BLOX",
     brandLabel: "dev group",
     brandMark: "blox",

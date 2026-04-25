@@ -1,14 +1,14 @@
 import "./NewsFeed.css";
 import { newsFeedItems, type NewsFeedItem } from "./newsFeed.mock";
 
-const newsImages = import.meta.glob("../../../../assets/home/news-feed/*", {
+const newsImages = import.meta.glob("../../../../assets/home/project_images/*", {
   eager: true,
   import: "default",
   query: "?url",
 }) as Record<string, string>;
 
 function getNewsImageUrl(imageLocation: string) {
-  return newsImages[`../../../../assets/home/news-feed/${imageLocation}`];
+  return newsImages[`../../../../assets/home/project_images/${imageLocation}`];
 }
 
 function HeartIcon() {
@@ -37,13 +37,19 @@ function BookmarkIcon() {
 }
 
 function BrandBadge({ item }: { item: NewsFeedItem }) {
+  const logoUrl = getNewsImageUrl(item.logo_location);
+
   return (
     <div className="news-feed_brand" aria-label={`${item.brand} ${item.brandLabel}`}>
       <span className="news-feed_brand-text">
         <strong>{item.brand}</strong>
         <span>{item.brandLabel}</span>
       </span>
-      <span className="news-feed_brand-mark">{item.brandMark}</span>
+      {logoUrl ? (
+        <img className="news-feed_brand-logo" src={logoUrl} alt="" loading="lazy" />
+      ) : (
+        <span className="news-feed_brand-mark">{item.brandMark}</span>
+      )}
     </div>
   );
 }
