@@ -46,9 +46,9 @@
 .developers-feed_carousel {
   overflow: hidden;
   width: 100%;
-  aspect-ratio: 4.38 / 1;
+  aspect-ratio: 4.38 / 1.2;
   min-height: 108px;
-  border-radius: 5px;
+  border-radius: 15px;
   background: #edf4f7;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
 }
