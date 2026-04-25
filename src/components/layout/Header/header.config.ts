@@ -7,6 +7,7 @@ export const navItems: NavItem[] = [
   { label: "მთავარი გვერდი", to: "/" },
   { label: "დეველოპერები", to: "/developers" },
   { label: "პროექტები", to: "/projects" },
+  { label: "შეთავაზებები", to: "/offers" },
 ];
 
 export const socialLinks: SocialLink[] = [
