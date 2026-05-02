@@ -4,6 +4,7 @@ import { projectDetails } from "./projectDetails.mock";
 import "./ProjectDetails.css";
 import { Feed } from "./sections/feed";
 import { About } from "./sections/about";
+import { Projects } from "./sections/projects";
 
 type TabType = "feed" | "about" | "projects" | "gallery" | "review" | "contact";
 
@@ -139,12 +140,7 @@ export default function ProjectDetailsPage() {
       <div className="project-details_content">
         {activeTab === "feed" && <Feed developerId={developer.id} />}
         {activeTab === "about" && <About developerId={developer.id} />}
-        {activeTab === "projects" && (
-          <section className="project-details_section">
-            <h2>Projects by {developer.name_end}</h2>
-            <p>Coming soon...</p>
-          </section>
-        )}
+        {activeTab === "projects" && <Projects developerId={developer.id} />}
         {activeTab === "gallery" && (
           <section className="project-details_section">
             <h2>Gallery</h2>
