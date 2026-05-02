@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { projectDetails } from "./projectDetails.mock";
 import "./ProjectDetails.css";
-import Feed from "./sections/feed/Feed";
+import { Feed } from "./sections/feed";
+import { About } from "./sections/about";
 
 type TabType = "feed" | "about" | "projects" | "gallery" | "review" | "contact";
 
@@ -137,13 +138,7 @@ export default function ProjectDetailsPage() {
       {/* Tab Content */}
       <div className="project-details_content">
         {activeTab === "feed" && <Feed developerId={developer.id} />}
-        {activeTab === "about" && (
-          <section className="project-details_section">
-            <h2>About {developer.name_end}</h2>
-            <p className="project-details_description">{developer.description_end}</p>
-            <p className="project-details_description-geo">{developer.description_geo}</p>
-          </section>
-        )}
+        {activeTab === "about" && <About developerId={developer.id} />}
         {activeTab === "projects" && (
           <section className="project-details_section">
             <h2>Projects by {developer.name_end}</h2>
