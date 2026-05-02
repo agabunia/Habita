@@ -202,7 +202,7 @@ export const feedItems: FeedItemType[] = [
     id: 2,
     developer_id: 1,
     type: "video",
-    video_url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    video_url: "https://www.youtube.com/embed/4IdWX_5CjLQ",
     title_geo: "პროექტის ტური",
     title_end: "Project Tour",
     description_geo: "გაიცანით ჩვენი ახალი პროექტის ყველა დეტალი ვიდეო ტურის საშუალებით.",
