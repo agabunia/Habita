@@ -9,24 +9,34 @@ import { Gallery } from "./sections/gallery";
 
 type TabType = "feed" | "about" | "projects" | "gallery" | "review" | "contact";
 
-const logoImages = import.meta.glob("../../assets/developers/developers_logos/*", {
-  eager: true,
-  import: "default",
-  query: "?url",
-}) as Record<string, string>;
+const logoImages = import.meta.glob(
+  "../../assets/developers/developers_logos/*",
+  {
+    eager: true,
+    import: "default",
+    query: "?url",
+  },
+) as Record<string, string>;
 
-const bannerImages = import.meta.glob("../../assets/developers/developers_logos/*", {
-  eager: true,
-  import: "default",
-  query: "?url",
-}) as Record<string, string>;
+const bannerImages = import.meta.glob(
+  "../../assets/developers/developers_logos/*",
+  {
+    eager: true,
+    import: "default",
+    query: "?url",
+  },
+) as Record<string, string>;
 
 function getLogoImageUrl(imageLocation: string) {
-  return logoImages[`../../assets/developers/developers_logos/${imageLocation}`];
+  return logoImages[
+    `../../assets/developers/developers_logos/${imageLocation}`
+  ];
 }
 
 function getBannerImageUrl(imageLocation: string) {
-  return bannerImages[`../../assets/developers/developers_logos/${imageLocation}`];
+  return bannerImages[
+    `../../assets/developers/developers_logos/${imageLocation}`
+  ];
 }
 
 export default function ProjectDetailsPage() {
@@ -45,7 +55,9 @@ export default function ProjectDetailsPage() {
   }
 
   const logoUrl = getLogoImageUrl(developer.logo_location);
-  const bannerUrl = getBannerImageUrl(developer.banner_location) || getBannerImageUrl(developer.logo_location);
+  const bannerUrl =
+    getBannerImageUrl(developer.banner_location) ||
+    getBannerImageUrl(developer.logo_location);
 
   return (
     <div className="project-details">
@@ -63,34 +75,42 @@ export default function ProjectDetailsPage() {
         <div className="project-details_card">
           <div className="project-details_logo-wrap">
             {logoUrl ? (
-              <img src={logoUrl} alt={developer.name_end} className="project-details_logo" />
+              <img
+                src={logoUrl}
+                alt={developer.name_end}
+                className="project-details_logo"
+              />
             ) : (
-              <span className="project-details_logo-fallback">{developer.name_end}</span>
+              <span className="project-details_logo-fallback">
+                {developer.name_end}
+              </span>
             )}
           </div>
           <div className="project-details_info">
-            <h1 className="project-details_title">
-              {developer.name_end} | {developer.name_geo}
-            </h1>
-            <div className="project-details_meta">
-              <div className="project-details_rating">
-                <span className="project-details_rating-value">{developer.rating.toFixed(1)}</span>
-                <div className="project-details_stars">
-                  {[...Array(5)].map((_, i) => (
-                    <span
-                      key={i}
-                      className={`project-details_star ${i < Math.floor(developer.rating) ? "filled" : ""}`}
-                    >
-                      ★
-                    </span>
-                  ))}
-                </div>
-              </div>
+            <div className="project-details_info-top">
+              <h1 className="project-details_title">
+                {developer.name_end} | {developer.name_geo}
+              </h1>
               <div className="project-details_likes">
                 <span className="project-details_likes-icon">❤️</span>
                 <span className="project-details_likes-value">
                   Likes {(developer.likes / 1000).toFixed(0)}k
                 </span>
+              </div>
+            </div>
+            <div className="project-details_rating">
+              <span className="project-details_rating-value">
+                {developer.rating.toFixed(1)}
+              </span>
+              <div className="project-details_stars">
+                {[...Array(5)].map((_, i) => (
+                  <span
+                    key={i}
+                    className={`project-details_star ${i < Math.floor(developer.rating) ? "filled" : ""}`}
+                  >
+                    ★
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -163,11 +183,15 @@ export default function ProjectDetailsPage() {
               </div>
               <div className="contact-item">
                 <span className="contact-label">Website:</span>
-                <span className="contact-value">{developer.contact.website}</span>
+                <span className="contact-value">
+                  {developer.contact.website}
+                </span>
               </div>
               <div className="contact-item">
                 <span className="contact-label">Instagram:</span>
-                <span className="contact-value">{developer.contact.instagram}</span>
+                <span className="contact-value">
+                  {developer.contact.instagram}
+                </span>
               </div>
             </div>
           </section>

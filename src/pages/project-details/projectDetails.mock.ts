@@ -6,8 +6,8 @@ export type ProjectDetailsType = {
   banner_location: string;
   rating: number;
   likes: number;
-  description_geo: string;
-  description_end: string;
+  // description_geo: string;
+  // description_end: string;
   contact: {
     phone: string;
     email: string;
@@ -24,13 +24,13 @@ export const projectDetails: ProjectDetailsType[] = [
     name_geo: "ბლოქსი",
     name_end: "BLOX",
     logo_location: "blox.jpg",
-    banner_location: "blox_banner.jpg",
+    banner_location: "background_banner.png",
     rating: 4.0,
-    likes: 22000,
-    description_geo: "საცხოვრებელი სივრცეები, სადაც ხარისხი, კომფორტი და მოფიქრული დიზაინი ერთად შედის ჩვენი ცხოვრების ხელმისაწვდომი და სახალისო გამოსახულების შესაქმნელად.",
-    description_end: "Living spaces where quality, comfort, and thoughtful design come together to shape the life you deserve. Living spaces where quality, comfort, and thoughtful design come together.",
+    likes: 4500,
+    // description_geo: "საცხოვრებელი სივრცეები, სადაც ხარისხი, კომფორტი და მოფიქრული დიზაინი ერთად შედის ჩვენი ცხოვრების ხელმისაწვდომი და სახალისო გამოსახულების შესაქმნელად.",
+    // description_end: "Living spaces where quality, comfort, and thoughtful design come together to shape the life you deserve. Living spaces where quality, comfort, and thoughtful design come together.",
     contact: {
-      phone: "+995 591 98 32 10",
+      phone: "+995 555 55 55 55",
       email: "info@blox.ge",
       website: "www.blox.ge",
       instagram: "@bloxofficial",
@@ -43,11 +43,11 @@ export const projectDetails: ProjectDetailsType[] = [
     name_geo: "არჩი",
     name_end: "Archi",
     logo_location: "archi.jpg",
-    banner_location: "archi_banner.jpg",
+    banner_location: "background_banner.png",
     rating: 4.5,
     likes: 18500,
-    description_geo: "აქტიტექტურული გადაწყვეტილებები, რომლებიც შაბლონიან თქვენი სიზმრების გაბედულ რეალიზაციას.",
-    description_end: "Architectural solutions that bring your boldest dreams to life with innovative design and precision.",
+    // description_geo: "აქტიტექტურული გადაწყვეტილებები, რომლებიც შაბლონიან თქვენი სიზმრების გაბედულ რეალიზაციას.",
+    // description_end: "Architectural solutions that bring your boldest dreams to life with innovative design and precision.",
     contact: {
       phone: "+995 591 12 34 56",
       email: "info@archi.ge",
@@ -62,11 +62,11 @@ export const projectDetails: ProjectDetailsType[] = [
     name_geo: "მ2",
     name_end: "m2",
     logo_location: "m2.jpg",
-    banner_location: "m2_banner.jpg",
+    banner_location: "background_banner.png",
     rating: 4.2,
     likes: 15000,
-    description_geo: "თანამედროვე სტილი და ფუნქციონალობა თითოეულ მეტრ კვადრატში.",
-    description_end: "Modern style and functionality in every square meter of space.",
+    // description_geo: "თანამედროვე სტილი და ფუნქციონალობა თითოეულ მეტრ კვადრატში.",
+    // description_end: "Modern style and functionality in every square meter of space.",
     contact: {
       phone: "+995 591 23 45 67",
       email: "info@m2.ge",
@@ -81,11 +81,11 @@ export const projectDetails: ProjectDetailsType[] = [
     name_geo: "დეკა",
     name_end: "Deka",
     logo_location: "deka.jpg",
-    banner_location: "deka_banner.jpg",
+    banner_location: "background_banner.png",
     rating: 3.9,
     likes: 12500,
-    description_geo: "ხარისხიანი პროექტები და სანდო პარტნიორი თქვენი სიზმრების რეალიზაციაში.",
-    description_end: "Quality projects and trusted partner in making your visions a reality.",
+    // description_geo: "ხარისხიანი პროექტები და სანდო პარტნიორი თქვენი სიზმრების რეალიზაციაში.",
+    // description_end: "Quality projects and trusted partner in making your visions a reality.",
     contact: {
       phone: "+995 591 34 56 78",
       email: "info@deka.ge",
@@ -100,11 +100,11 @@ export const projectDetails: ProjectDetailsType[] = [
     name_geo: "ბიოგრაფი",
     name_end: "Biograpi",
     logo_location: "biograpi.jpg",
-    banner_location: "biograpi_banner.jpg",
+    banner_location: "background_banner.png",
     rating: 4.3,
     likes: 20000,
-    description_geo: "ბიოგრაფიული სივრცეები, რომლებიც ამბობენ თქვენი ისტორიას.",
-    description_end: "Biographical spaces that tell your unique story.",
+    // description_geo: "ბიოგრაფიული სივრცეები, რომლებიც ამბობენ თქვენი ისტორიას.",
+    // description_end: "Biographical spaces that tell your unique story.",
     contact: {
       phone: "+995 591 45 67 89",
       email: "info@biograpi.ge",
@@ -119,11 +119,11 @@ export const projectDetails: ProjectDetailsType[] = [
     name_geo: "აპექსი",
     name_end: "Apex",
     logo_location: "apex.jpg",
-    banner_location: "apex_banner.jpg",
+    banner_location: "background_banner.png",
     rating: 4.1,
     likes: 16800,
-    description_geo: "ზღვარზე სიბრძნე - საუკეთესო მაღალწერტილოვანი რეალური ქონება.",
-    description_end: "Excellence at the peak - premium real estate developments.",
+    // description_geo: "ზღვარზე სიბრძნე - საუკეთესო მაღალწერტილოვანი რეალური ქონება.",
+    // description_end: "Excellence at the peak - premium real estate developments.",
     contact: {
       phone: "+995 591 56 78 90",
       email: "info@apex.ge",
@@ -138,11 +138,11 @@ export const projectDetails: ProjectDetailsType[] = [
     name_geo: "თეთრი კვადრატი",
     name_end: "White Square",
     logo_location: "white_square.jpg",
-    banner_location: "white_square_banner.jpg",
+    banner_location: "background_banner.png",
     rating: 4.0,
     likes: 14200,
-    description_geo: "სიბრძნე და სიმარტივე თეთრ სივრცეში.",
-    description_end: "Elegance and simplicity in white spaces.",
+    // description_geo: "სიბრძნე და სიმარტივე თეთრ სივრცეში.",
+    // description_end: "Elegance and simplicity in white spaces.",
     contact: {
       phone: "+995 591 67 89 01",
       email: "info@whitesquare.ge",
@@ -157,11 +157,11 @@ export const projectDetails: ProjectDetailsType[] = [
     name_geo: "ისტორია",
     name_end: "Istoria",
     logo_location: "istoria.jpg",
-    banner_location: "istoria_banner.jpg",
+    banner_location: "background_banner.png",
     rating: 3.8,
     likes: 11500,
-    description_geo: "ისტორია, რომელიც წერი თანამედროვე ხელოვნების საშუალებით.",
-    description_end: "History written with modern architectural craftsmanship.",
+    // description_geo: "ისტორია, რომელიც წერი თანამედროვე ხელოვნების საშუალებით.",
+    // description_end: "History written with modern architectural craftsmanship.",
     contact: {
       phone: "+995 591 78 90 12",
       email: "info@istoria.ge",
