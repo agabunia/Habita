@@ -2,7 +2,7 @@ export type FeedItemType = {
   id: number;
   developer_id: number;
   name_geo: string;
-  name_end: string;
+  name_eng: string;
   logo_location: string;
   type: "image" | "video";
   content_location?: string;
@@ -19,7 +19,7 @@ export const feedItems: FeedItemType[] = [
     id: 1,
     developer_id: 1,
     name_geo: "ბლოქსი",
-    name_end: "BLOX",
+    name_eng: "BLOX",
     logo_location: "blox.jpg",
     type: "image",
     content_location: "feed_1.jpg",
@@ -33,7 +33,7 @@ export const feedItems: FeedItemType[] = [
     id: 2,
     developer_id: 1,
     name_geo: "ბლოქსი",
-    name_end: "BLOX",
+    name_eng: "BLOX",
     logo_location: "blox.jpg",
     type: "video",
     video_url: "https://www.youtube.com/embed/4IdWX_5CjLQ",
@@ -47,7 +47,7 @@ export const feedItems: FeedItemType[] = [
     id: 3,
     developer_id: 1,
     name_geo: "ბლოქსი",
-    name_end: "BLOX",
+    name_eng: "BLOX",
     logo_location: "blox.jpg",
     type: "image",
     content_location: "feed_1.jpg",
@@ -61,7 +61,7 @@ export const feedItems: FeedItemType[] = [
     id: 4,
     developer_id: 1,
     name_geo: "ბლოქსი",
-    name_end: "BLOX",
+    name_eng: "BLOX",
     logo_location: "blox.jpg",
     type: "image",
     content_location: "feed_1.jpg",
@@ -75,7 +75,7 @@ export const feedItems: FeedItemType[] = [
     id: 1,
     developer_id: 2,
     name_geo: "არჩი",
-    name_end: "Archi",
+    name_eng: "Archi",
     logo_location: "archi.jpg",
     type: "image",
     content_location: "feed_1.jpg",
@@ -89,7 +89,7 @@ export const feedItems: FeedItemType[] = [
     id: 1,
     developer_id: 3,
     name_geo: "მ2",
-    name_end: "m2",
+    name_eng: "m2",
     logo_location: "m2.jpg",
     type: "image",
     content_location: "feed_1.jpg",
@@ -103,7 +103,7 @@ export const feedItems: FeedItemType[] = [
     id: 1,
     developer_id: 4,
     name_geo: "დეკა",
-    name_end: "Deka",
+    name_eng: "Deka",
     logo_location: "deka.jpg",
     type: "image",
     content_location: "feed_1.jpg",
@@ -117,7 +117,7 @@ export const feedItems: FeedItemType[] = [
     id: 1,
     developer_id: 5,
     name_geo: "ბიოგრაფი",
-    name_end: "Biograpi",
+    name_eng: "Biograpi",
     logo_location: "biograpi.jpg",
     type: "image",
     content_location: "feed_1.jpg",

@@ -25,10 +25,19 @@ export default function About({ developerId }: AboutProps) {
 
   return (
     <div className="about-section">
+      <AboutHeader about={aboutData} />
       <AboutDescription about={aboutData} />
       <SinceSection about={aboutData} />
       <PartnersCarousel about={aboutData} />
       <SocialMediaCarousel about={aboutData} />
+    </div>
+  );
+}
+
+function AboutHeader({ about }: { about: AboutSectionType }) {
+  return (
+    <div className="about-header-div">
+      <h2 className="about-header-header">About <span className="about-header-span">{about.name_eng}</span></h2>
     </div>
   );
 }
@@ -132,20 +141,20 @@ function PartnersCarousel({ about }: { about: AboutSectionType }) {
   );
 }
 
-function PartnerCard({ partner }: { partner: { id: number; name_geo: string; name_end: string; logo_location: string } }) {
+function PartnerCard({ partner }: { partner: { id: number; name_geo: string; name_eng: string; logo_location: string } }) {
   const logoUrl = getLogoImageUrl(partner.logo_location);
 
   return (
     <div className="partner-card">
       <div className="partner-card_logo">
         {logoUrl ? (
-          <img src={logoUrl} alt={partner.name_end} />
+          <img src={logoUrl} alt={partner.name_eng} />
         ) : (
-          <span className="partner-card_logo-fallback">{partner.name_end}</span>
+          <span className="partner-card_logo-fallback">{partner.name_eng}</span>
         )}
       </div>
       <div className="partner-card_info">
-        <p className="partner-card_name">{partner.name_end}</p>
+        <p className="partner-card_name">{partner.name_eng}</p>
         <p className="partner-card_name-geo">{partner.name_geo}</p>
       </div>
     </div>

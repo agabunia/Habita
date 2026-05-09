@@ -63,29 +63,26 @@
   gap: 20px;
   flex-shrink: 0;
   border: 0.5px solid #9A9A9A;
-  border-radius: 100px;
+  border-radius: 50px;
 }
 
 .feed-item_brand-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
   gap: 2px;
-  font-size: 14px;
+  padding: 0 15px 0 20px;
+  font-size: 5px;
   line-height: 1.2;
   color: #222;
-  font-weight: 400;
-}
-
-.project-details_title {
-  font-size: 20px;
-  padding: 0 10px 0 20px;
+  font-weight: 100;
 }
 
 .feed-item_logo {
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
+  border-radius: 100px;
   background: #253140;
   color: #ffffff;
   display: flex;
@@ -94,6 +91,11 @@
   font-size: 17px;
   font-weight: 700;
   flex-shrink: 0;
+}
+
+.feed-details_title {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* Divider */

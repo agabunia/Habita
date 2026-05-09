@@ -75,14 +75,14 @@ function FeedItem({ item }: { item: FeedItemType }) {
 
         <div className="feed-item_brand">
           <div className="feed-item_brand-text">
-            <p className="project-details_title">{item.name_end}</p>
-            <p className="project-details_title">{item.name_geo}</p>
+            <p className="feed-details_title">{item.name_eng}</p>
+            <p className="feed-details_title">{item.name_geo}</p>
           </div>
 
           <div className="feed-item_logo">
             <img
               src={logoUrl}
-              alt={item.name_end || item.name_geo || "Developer logo"}
+              alt={item.name_eng || item.name_geo || "Developer logo"}
               className="feed-item_logo"
             />
           </div>

@@ -11,6 +11,22 @@
   padding: 40px 20px;
 }
 
+/* About Header */
+.about-header-div {
+  text-align: left;
+  padding: 0 0 0 20px;
+}
+
+.about-header-header {
+  font-size: 24px;
+  font-weight: 350;
+}
+
+.about-header-span {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 /* About Description */
 .about-description {
   background: white;
