@@ -1,4 +1,4 @@
-import { feedItems, type FeedItemType } from "../../projectDetails.mock";
+import { feedItems, type FeedItemType } from "./Feed.mock";
 import "./Feed.css";
 
 const feedImages = import.meta.glob("../../../../assets/developers/developers_feed/*", {
