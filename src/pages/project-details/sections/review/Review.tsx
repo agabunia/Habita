@@ -7,7 +7,7 @@ import {
 import "./Review.css";
 
 const avatarImages = import.meta.glob(
-  "../../../../assets/developers/developers_logos/*",
+  "../../../../assets/users/*",
   {
     eager: true,
     import: "default",
@@ -25,7 +25,7 @@ function getAvatarUrl(imageLocation?: string) {
   if (!imageLocation) return undefined;
 
   return avatarImages[
-    `../../../../assets/developers/developers_logos/${imageLocation}`
+    `../../../../assets/users/${imageLocation}`
   ];
 }
 

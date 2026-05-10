@@ -32,7 +32,7 @@ export const reviews: ReviewType[] = [
     id: 1,
     developer_id: 1,
     author_name: "Gigi 12312414",
-    author_avatar_location: "blox.jpg",
+    author_avatar_location: "user_1.jpg",
     rating: 4,
     comment_geo:
       "საკმაოდ არასანდო ფასის საკითხებში და საბოლოოდ ვისაც გავერე. მხოლოდ საინტერესო ისტორიების ყვება ძველ ბინებზე.",
@@ -55,7 +55,7 @@ export const reviews: ReviewType[] = [
     id: 3,
     developer_id: 1,
     author_name: "Gigi 12312414",
-    author_avatar_location: "archi.jpg",
+    author_avatar_location: "user_2.png",
     rating: 4,
     comment_geo:
       "ბარათის CHIROKO დაკვებული გემო, რომელიც ძალიან კომფორტულია. შევუე კვოვის ჩირთი, როგორი კარანგელიო,",
@@ -67,7 +67,7 @@ export const reviews: ReviewType[] = [
     id: 4,
     developer_id: 1,
     author_name: "Nika 45127890",
-    author_avatar_location: "m2.jpg",
+    author_avatar_location: "user_2.png",
     rating: 5,
     comment_geo:
       "მენეჯერთან კომუნიკაცია სწრაფი იყო და ყველა დეტალი დროულად გამიზიარეს. განსაკუთრებით მომეწონა პროექტის მდებარეობა.",
@@ -90,7 +90,7 @@ export const reviews: ReviewType[] = [
     id: 6,
     developer_id: 1,
     author_name: "Mari 10293847",
-    author_avatar_location: "deka.jpg",
+    author_avatar_location: "user_1.jpg",
     rating: 4,
     comment_geo:
       "შენობის ხარისხი კარგად გამოიყურება და გუნდი ყურადღებიანია. შეხვედრაზე ყველა კითხვა დეტალურად განვიხილეთ.",
@@ -113,7 +113,7 @@ export const reviews: ReviewType[] = [
     id: 8,
     developer_id: 1,
     author_name: "Tako 66420117",
-    author_avatar_location: "biograpi.jpg",
+    author_avatar_location: "user_1.jpg",
     rating: 5,
     comment_geo:
       "ძალიან კარგი გამოცდილება მქონდა. კონსულტანტმა ზუსტად მომარგო ბინის ვარიანტები ჩემს ბიუჯეტსა და საჭიროებებს.",
@@ -136,7 +136,7 @@ export const reviews: ReviewType[] = [
     id: 10,
     developer_id: 1,
     author_name: "Sopo 12004598",
-    author_avatar_location: "white_square.jpg",
+    author_avatar_location: "user_2.png",
     rating: 4,
     comment_geo:
       "საერთო შთაბეჭდილება დადებითია. ვისურვებდი, რომ პარკინგის პირობები უფრო მარტივად ყოფილიყო ახსნილი.",
@@ -148,7 +148,7 @@ export const reviews: ReviewType[] = [
     id: 11,
     developer_id: 2,
     author_name: "Irakli 34217890",
-    author_avatar_location: "archi.jpg",
+    author_avatar_location: "user_1.jpg",
     rating: 5,
     comment_geo:
       "კარგი გუნდი და მოწესრიგებული პროცესი. პროექტის შესახებ ყველა დოკუმენტი დროულად მივიღე.",
@@ -160,7 +160,6 @@ export const reviews: ReviewType[] = [
     id: 12,
     developer_id: 3,
     author_name: "Elene 78234511",
-    author_avatar_location: "m2.jpg",
     rating: 4,
     comment_geo:
       "თანამედროვე დაგეგმარებაა და კონსულტაცია სასარგებლო აღმოჩნდა. ფასები საშუალოზე მაღალია.",
