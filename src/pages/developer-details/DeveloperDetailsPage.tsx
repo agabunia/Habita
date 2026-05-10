@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { projectDetails } from "./projectDetails.mock";
-import "./ProjectDetails.css";
+import { projectDetails } from "./DeveloperDetails.mock";
+import "./DeveloperDetails.css";
 import { Feed } from "./sections/feed";
 import { About } from "./sections/about";
 import { Projects } from "./sections/projects";
