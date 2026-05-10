@@ -82,7 +82,7 @@ function ContactCard({
           <ContactField label="Mobile phone" name="mobile-phone" />
           <ContactField label="Name" name="name" />
 
-          <label className="contact-field">
+          <label className="contact-field interested-project">
             <span>Project you're interested in</span>
             <select
               value={selectedProjectId}
@@ -98,7 +98,7 @@ function ContactCard({
             </select>
           </label>
 
-          <label className="contact-field">
+          <label className="contact-field call-time">
             <span>Best time for a call</span>
             <select
               value={selectedCallTime}
