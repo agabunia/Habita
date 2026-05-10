@@ -1,6 +1,5 @@
 .contact-section {
-  width: min(100%, 464px);
-  margin: 0 auto;
+  width: 100%;
   color: #575757;
 }
 
@@ -14,9 +13,9 @@
 .contact-card {
   background: #ffffff;
   border: 1px solid #dddddd;
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  padding: 13px 24px 14px;
+  padding: 20px 30px;
 }
 
 .contact-card_header {
@@ -25,12 +24,13 @@
   align-items: center;
   gap: 18px;
   text-align: center;
+  padding: 5px 0 10px 0;
 }
 
 .contact-card_header h2 {
   margin: 0;
   color: #575757;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.1;
   font-weight: 400;
 }
@@ -44,7 +44,7 @@
 .contact-card_divider {
   height: 1px;
   background: #cfcfcf;
-  margin: 12px 6px 11px;
+  margin: 12px 6px 0;
 }
 
 .contact-card_body {
@@ -55,15 +55,24 @@
 
 .contact-card_vertical-divider {
   width: 1px;
-  height: 211px;
+  height: 100%;
   background: #cfcfcf;
 }
 
 .contact-column {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  align-items: center;
+  justify-self: center;
+  padding: 15px 0 0 0;
+  gap: 15px;
   min-width: 0;
+  width: 100%;
+  max-width: 30vw;
+}
+
+.contact-column .contact-field {
+  width: 100%;
 }
 
 .contact-field {
@@ -77,7 +86,6 @@
 
 .contact-field input,
 .contact-field select {
-  width: 100%;
   height: 31px;
   border: 1px solid #dddddd;
   border-radius: 5px;
