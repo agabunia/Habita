@@ -132,7 +132,7 @@ function GalleryCard({ item }: { item: GalleryItemType }) {
               <iframe
                 className="gallery-card_video"
                 src={item.video_url}
-                title={item.title_end}
+                title={item.title_eng}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
@@ -142,7 +142,7 @@ function GalleryCard({ item }: { item: GalleryItemType }) {
           ) : (
             <img
               src={imageUrl || "https://via.placeholder.com/300x300"}
-              alt={item.title_end || "Gallery item"}
+              alt={item.title_eng || "Gallery item"}
               className="gallery-card_image"
             />
           )}
@@ -162,9 +162,9 @@ function GalleryCard({ item }: { item: GalleryItemType }) {
           </div>
         </div>
 
-        {item.title_end && (
+        {item.title_eng && (
           <div className="gallery-card_content">
-            <h4 className="gallery-card_title">{item.title_end}</h4>
+            <h4 className="gallery-card_title">{item.title_eng}</h4>
             {item.title_geo && <p className="gallery-card_title-geo">{item.title_geo}</p>}
             <span className="gallery-card_date">{new Date(item.date).toLocaleDateString()}</span>
           </div>
@@ -199,21 +199,21 @@ function GalleryModal({
           <iframe
             className="gallery-modal_video"
             src={item.video_url}
-            title={item.title_end}
+            title={item.title_eng}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         ) : (
           <img
             src={imageUrl || "https://via.placeholder.com/800x600"}
-            alt={item.title_end}
+            alt={item.title_eng}
             className="gallery-modal_image"
           />
         )}
 
-        {item.title_end && (
+        {item.title_eng && (
           <div className="gallery-modal_info">
-            <h3 className="gallery-modal_title">{item.title_end}</h3>
+            <h3 className="gallery-modal_title">{item.title_eng}</h3>
             {item.title_geo && <p className="gallery-modal_title-geo">{item.title_geo}</p>}
             <span className="gallery-modal_date">{new Date(item.date).toLocaleDateString()}</span>
           </div>

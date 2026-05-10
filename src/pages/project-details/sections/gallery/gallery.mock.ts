@@ -5,7 +5,7 @@ export type GalleryItemType = {
   image_location: string;
   video_url?: string;
   title_geo?: string;
-  title_end?: string;
+  title_eng?: string;
   date: string;
 };
 
@@ -16,7 +16,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_1.jpg",
     title_geo: "პროექტის სახედი",
-    title_end: "Project Exterior",
+    title_eng: "Project Exterior",
     date: "2024-01-15",
   },
   {
@@ -25,7 +25,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_2.jpg",
     title_geo: "საცხოვრებელი სივრცე",
-    title_end: "Living Space",
+    title_eng: "Living Space",
     date: "2024-01-20",
   },
   {
@@ -34,7 +34,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_3.jpg",
     title_geo: "მოდერნული დიზაინი",
-    title_end: "Modern Design",
+    title_eng: "Modern Design",
     date: "2024-01-25",
   },
   {
@@ -43,7 +43,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_4.jpg",
     title_geo: "შიგა დეკორაცია",
-    title_end: "Interior Design",
+    title_eng: "Interior Design",
     date: "2024-02-01",
   },
   {
@@ -53,7 +53,7 @@ export const galleryItems: GalleryItemType[] = [
     image_location: "img_1.jpg",
     video_url: "https://www.youtube.com/embed/4IdWX_5CjLQ",
     title_geo: "მშენებლობის პროცესი",
-    title_end: "Construction Process",
+    title_eng: "Construction Process",
     date: "2024-02-05",
   },
   {
@@ -62,7 +62,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_5.jpg",
     title_geo: "ფასადი",
-    title_end: "Building Facade",
+    title_eng: "Building Facade",
     date: "2024-02-10",
   },
   {
@@ -71,7 +71,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_6.jpg",
     title_geo: "მდელოს პარკი",
-    title_end: "Meadow Park",
+    title_eng: "Meadow Park",
     date: "2024-02-15",
   },
   {
@@ -81,7 +81,7 @@ export const galleryItems: GalleryItemType[] = [
     image_location: "img_3.jpg",
     video_url: "https://www.youtube.com/embed/4IdWX_5CjLQ",
     title_geo: "ვირტუალური ტური",
-    title_end: "Virtual Tour",
+    title_eng: "Virtual Tour",
     date: "2024-02-20",
   },
   {
@@ -90,7 +90,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_4.jpg",
     title_geo: "ღია სურ",
-    title_end: "Clear Horizons",
+    title_eng: "Clear Horizons",
     date: "2024-02-25",
   },
   {
@@ -99,7 +99,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_1.jpg",
     title_geo: "მდელოს ხედი",
-    title_end: "Meadow View",
+    title_eng: "Meadow View",
     date: "2024-03-01",
   },
   {
@@ -108,7 +108,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_2.jpg",
     title_geo: "რკინის კვარტირა",
-    title_end: "Iron Quarters",
+    title_eng: "Iron Quarters",
     date: "2024-03-05",
   },
   {
@@ -118,7 +118,7 @@ export const galleryItems: GalleryItemType[] = [
     image_location: "img_5.jpg",
     video_url: "https://www.youtube.com/embed/4IdWX_5CjLQ",
     title_geo: "პროექტის ფილმი",
-    title_end: "Project Film",
+    title_eng: "Project Film",
     date: "2024-03-10",
   },
   {
@@ -127,7 +127,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_5.jpg",
     title_geo: "ღვინის პლაკოს",
-    title_end: "Wine Court",
+    title_eng: "Wine Court",
     date: "2024-03-15",
   },
   {
@@ -136,7 +136,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_6.jpg",
     title_geo: "მწვანე სიდან",
-    title_end: "Green Side",
+    title_eng: "Green Side",
     date: "2024-03-20",
   },
   {
@@ -145,7 +145,7 @@ export const galleryItems: GalleryItemType[] = [
     type: "photo",
     image_location: "img_3.jpg",
     title_geo: "ღეფის პროექტი",
-    title_end: "Luxury Project",
+    title_eng: "Luxury Project",
     date: "2024-03-25",
   },
 ];

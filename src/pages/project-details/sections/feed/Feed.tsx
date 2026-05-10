@@ -102,7 +102,7 @@ function FeedItem({ item }: { item: FeedItemType }) {
         <div className="feed-item_media">
           <img
             src={imageUrl}
-            alt={item.title_end || item.title_geo || "Feed item"}
+            alt={item.title_eng || item.title_geo || "Feed item"}
             className="feed-item_image"
           />
         </div>
@@ -113,7 +113,7 @@ function FeedItem({ item }: { item: FeedItemType }) {
           <iframe
             className="feed-item_video"
             src={item.video_url}
-            title={item.title_end || item.title_geo || "Feed video"}
+            title={item.title_eng || item.title_geo || "Feed video"}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />

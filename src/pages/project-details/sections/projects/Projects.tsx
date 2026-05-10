@@ -148,7 +148,7 @@ function ProjectCard({ project }: { project: ProjectType }) {
           </div>
         </div>
 
-        <p className="project-card_location">{project.location_end}</p>
+        <p className="project-card_location">{project.location_eng}</p>
 
         {project.area_sqm && project.units_count && (
           <div className="project-card_details">

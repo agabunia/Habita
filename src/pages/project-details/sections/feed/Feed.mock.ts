@@ -8,9 +8,9 @@ export type FeedItemType = {
   content_location?: string;
   video_url?: string;
   title_geo?: string;
-  title_end?: string;
+  title_eng?: string;
   description_geo?: string;
-  description_end?: string;
+  description_eng?: string;
   date: string;
 };
 
@@ -24,9 +24,9 @@ export const feedItems: FeedItemType[] = [
     type: "image",
     content_location: "feed_1.jpg",
     title_geo: "ახალი პროექტი",
-    title_end: "New Project Launch",
+    title_eng: "New Project Launch",
     description_geo: "ჩვენი ახალი ფლაგმენენი პროექტი ხელმისაწვდომი ხარისხითა და თანამედროვე დიზაინით.",
-    description_end: "Our latest flagship project showcasing premium quality and modern design.",
+    description_eng: "Our latest flagship project showcasing premium quality and modern design.",
     date: "2024-01-15",
   },
   {
@@ -38,9 +38,9 @@ export const feedItems: FeedItemType[] = [
     type: "video",
     video_url: "https://www.youtube.com/embed/4IdWX_5CjLQ",
     title_geo: "პროექტის ტური",
-    title_end: "Project Tour",
+    title_eng: "Project Tour",
     description_geo: "გაიცანით ჩვენი ახალი პროექტის ყველა დეტალი ვიდეო ტურის საშუალებით.",
-    description_end: "Explore every detail of our new project through an immersive video tour.",
+    description_eng: "Explore every detail of our new project through an immersive video tour.",
     date: "2024-01-20",
   },
   {
@@ -52,9 +52,9 @@ export const feedItems: FeedItemType[] = [
     type: "image",
     content_location: "feed_1.jpg",
     title_geo: "დიზაინ კონცეფცია",
-    title_end: "Design Concept",
+    title_eng: "Design Concept",
     description_geo: "მოდერნული დიზაინი და კლასიკური კომფორტი ერთ პროექტში.",
-    description_end: "Modern design meets classic comfort in our newest concept.",
+    description_eng: "Modern design meets classic comfort in our newest concept.",
     date: "2024-01-25",
   },
   {
@@ -66,9 +66,9 @@ export const feedItems: FeedItemType[] = [
     type: "image",
     content_location: "feed_1.jpg",
     title_geo: "შიგა დეკორაცია",
-    title_end: "Interior Design",
+    title_eng: "Interior Design",
     description_geo: "ყველა ძირითადი ელემენტი, რომელიც გახდის თქვენს სახლს ღვინით.",
-    description_end: "Every essential element that makes your home truly special.",
+    description_eng: "Every essential element that makes your home truly special.",
     date: "2024-02-01",
   },
   {
@@ -80,9 +80,9 @@ export const feedItems: FeedItemType[] = [
     type: "image",
     content_location: "feed_1.jpg",
     title_geo: "შიგა დეკორაცია",
-    title_end: "Interior Design",
+    title_eng: "Interior Design",
     description_geo: "ყველა ძირითადი ელემენტი, რომელიც გახდის თქვენს სახლს ღვინით.",
-    description_end: "Every essential element that makes your home truly special.",
+    description_eng: "Every essential element that makes your home truly special.",
     date: "2024-02-01",
   },
   {
@@ -94,9 +94,9 @@ export const feedItems: FeedItemType[] = [
     type: "image",
     content_location: "feed_1.jpg",
     title_geo: "შიგა დეკორაცია",
-    title_end: "Interior Design",
+    title_eng: "Interior Design",
     description_geo: "ყველა ძირითადი ელემენტი, რომელიც გახდის თქვენს სახლს ღვინით.",
-    description_end: "Every essential element that makes your home truly special.",
+    description_eng: "Every essential element that makes your home truly special.",
     date: "2024-02-01",
   },
   {
@@ -108,9 +108,9 @@ export const feedItems: FeedItemType[] = [
     type: "image",
     content_location: "feed_1.jpg",
     title_geo: "შიგა დეკორაცია",
-    title_end: "Interior Design",
+    title_eng: "Interior Design",
     description_geo: "ყველა ძირითადი ელემენტი, რომელიც გახდის თქვენს სახლს ღვინით.",
-    description_end: "Every essential element that makes your home truly special.",
+    description_eng: "Every essential element that makes your home truly special.",
     date: "2024-02-01",
   },
   {
@@ -122,9 +122,9 @@ export const feedItems: FeedItemType[] = [
     type: "image",
     content_location: "feed_1.jpg",
     title_geo: "შიგა დეკორაცია",
-    title_end: "Interior Design",
+    title_eng: "Interior Design",
     description_geo: "ყველა ძირითადი ელემენტი, რომელიც გახდის თქვენს სახლს ღვინით.",
-    description_end: "Every essential element that makes your home truly special.",
+    description_eng: "Every essential element that makes your home truly special.",
     date: "2024-02-01",
   },
 ];

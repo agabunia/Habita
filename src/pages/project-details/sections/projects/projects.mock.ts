@@ -4,7 +4,7 @@ export type ProjectType = {
   name_geo: string;
   name_eng: string;
   location_geo: string;
-  location_end: string;
+  location_eng: string;
   image_location: string;
   status: "finished" | "on_going";
   completion_percentage?: number;
@@ -12,7 +12,7 @@ export type ProjectType = {
   end_date?: string;
   budget?: string;
   description_geo?: string;
-  description_end?: string;
+  description_eng?: string;
   area_sqm?: number;
   units_count?: number;
 };
@@ -24,7 +24,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | კოლიჯი",
     name_eng: "BLOX | Kolonici",
     location_geo: "საბულვარი ქ., ქაფი-ში მახ კი",
-    location_end: "Sabul vari St, Kafpi District",
+    location_eng: "Sabul vari St, Kafpi District",
     image_location: "img_1.jpg",
     status: "finished",
     completion_percentage: 100,
@@ -40,7 +40,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | სამეფო ტიბა",
     name_eng: "BLOX | Royal Tower",
     location_geo: "ვაზის გასწვრივ, თბილისი",
-    location_end: "Vazi Ave, Tbilisi",
+    location_eng: "Vazi Ave, Tbilisi",
     image_location: "img_2.jpg",
     status: "finished",
     completion_percentage: 100,
@@ -56,7 +56,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | აზიელი პროექტი",
     name_eng: "BLOX | Premium Living",
     location_geo: "თეთრი რიგი, თბილისი",
-    location_end: "White Row, Tbilisi",
+    location_eng: "White Row, Tbilisi",
     image_location: "img_3.jpg",
     status: "finished",
     completion_percentage: 100,
@@ -72,7 +72,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | მდელოს პარკი",
     name_eng: "BLOX | Meadow Park",
     location_geo: "ხელაკსე ნახ., თბილისი",
-    location_end: "Xelakse District, Tbilisi",
+    location_eng: "Xelakse District, Tbilisi",
     image_location: "img_4.jpg",
     status: "on_going",
     completion_percentage: 75,
@@ -87,7 +87,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | პიკი კვარტირა",
     name_eng: "BLOX | Peak Residences",
     location_geo: "აღმაშენებლების ქ., თბილისი",
-    location_end: "Builders St, Tbilisi",
+    location_eng: "Builders St, Tbilisi",
     image_location: "img_5.jpg",
     status: "on_going",
     completion_percentage: 60,
@@ -102,7 +102,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | ღია სურ",
     name_eng: "BLOX | Clear Horizons",
     location_geo: "ღია ქ., დიდუბე",
-    location_end: "Clear St, Didube",
+    location_eng: "Clear St, Didube",
     image_location: "img_6.jpg",
     status: "finished",
     completion_percentage: 100,
@@ -118,7 +118,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | ოქროს კვარტირა",
     name_eng: "BLOX | Golden Park",
     location_geo: "ოქროს ქ., თბილისი",
-    location_end: "Golden St, Tbilisi",
+    location_eng: "Golden St, Tbilisi",
     image_location: "img_1.jpg",
     status: "on_going",
     completion_percentage: 45,
@@ -133,7 +133,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | მარმარილოს პროექტი",
     name_eng: "BLOX | Marble Quarters",
     location_geo: "მარმარილოს ხეა, თბილისი",
-    location_end: "Marble Way, Tbilisi",
+    location_eng: "Marble Way, Tbilisi",
     image_location: "img_2.jpg",
     status: "finished",
     completion_percentage: 100,
@@ -149,7 +149,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | წიწილა გორა",
     name_eng: "BLOX | Blossom Heights",
     location_geo: "ღვინის ხეა, თბილისი",
-    location_end: "Wine Ave, Tbilisii",
+    location_eng: "Wine Ave, Tbilisii",
     image_location: "img_3.jpg",
     status: "finished",
     completion_percentage: 100,
@@ -165,7 +165,7 @@ export const projects: ProjectType[] = [
     name_geo: "ბილიკი | მწვანე მოედანი",
     name_eng: "BLOX | Green Square",
     location_geo: "მწვანე ქ., სარაჯიშვილი",
-    location_end: "Green St, Sarazhishvili",
+    location_eng: "Green St, Sarazhishvili",
     image_location: "img_4.jpg",
     status: "on_going",
     completion_percentage: 55,
