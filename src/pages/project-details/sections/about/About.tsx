@@ -223,10 +223,10 @@ function SocialMediaCarousel({ about }: { about: AboutSectionType }) {
       </div>
 
       <div className="social-carousel_dots">
-        {Array.from({ length: Math.ceil(about.social_media.length / itemsPerView) }).map((_, idx) => (
+        {Array.from({ length: Math.max(1, about.social_media.length + 1) }).map((_, idx) => (
           <button
             key={idx}
-            className={`social-carousel_dot ${idx === Math.floor(currentIndex / 1) ? "active" : ""}`}
+            className={`social-carousel_dot ${idx === currentIndex ? "active" : ""}`}
             onClick={() => setCurrentIndex(Math.min(idx, maxIndex))}
             aria-label={`Go to slide ${idx + 1}`}
           />

@@ -71,7 +71,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 100%;
+  max-width: 1149px;
 }
 
 .flag-icon {
@@ -102,7 +102,7 @@
 }
 
 .since-section_bar {
-  width: 100vw;
+  width: 940px;
   height: 10px;
   background: #57B5D3;
   border-radius: 5px;
@@ -266,162 +266,116 @@
 }
 
 /* Social Media Carousel */
-.social-carousel {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
 .social-carousel_title {
+  margin: 0 0 8px 12px;
+  color: #575757;
   font-size: 20px;
-  font-weight: 600;
-  color: #2c3e50;
-  margin: 0 0 25px 0;
-  text-transform: capitalize;
+  line-height: 1.2;
+  font-weight: 400;
 }
 
 .social-carousel_container {
-  display: flex;
-  align-items: center;
-  gap: 15px;
   position: relative;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 10vw 1fr 10vw;
+  align-items: center;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  padding: 0 12px;
 }
 
 .social-carousel_arrow {
-  background: #f5f5f5;
-  border: 1px solid #ddd;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 24px;
-  color: #667eea;
-  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: transparent;
+  color: #cfcfcf;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-  flex-shrink: 0;
-}
-
-.social-carousel_arrow:hover:not(:disabled) {
-  background: #667eea;
-  color: white;
-  border-color: #667eea;
+  cursor: pointer;
+  padding: 0;
+  font-size: 24px;
 }
 
 .social-carousel_arrow:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  color: #ccc;
+  cursor: default;
 }
 
 .social-carousel_viewport {
-  flex: 1;
   overflow: hidden;
-  border-radius: 8px;
 }
 
 .social-carousel_track {
   display: flex;
-  gap: 20px;
-  transition: transform 0.4s ease;
+  align-items: center;
+  gap: 31px;
+  transition: transform 0.3s ease;
 }
 
 .social-media-card {
-  flex: 0 0 calc(25% - 15px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  padding: 20px;
-  background: #f8f9fa;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.social-media-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  background: white;
-}
-
-.social-media-card_icon {
-  width: 80px;
-  height: 80px;
-  background: white;
+  flex: 0 0 calc(25% - 24px);
+  min-width: 52px;
+  aspect-ratio: 1;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-.social-media-card:hover .social-media-card_icon {
-  background: white;
+  text-decoration: none;
+  color: #58b8da;
 }
 
 .social-media-card_icon img {
-  width: 100%;
-  height: 100%;
+  width: 5vw;
+  height: 5vw;
   border-radius: 50%;
   object-fit: cover;
+  display: block;
 }
 
-.social-media-card_icon-fallback {
-  color: #667eea;
-  font-size: 12px;
-  font-weight: 600;
+.social-media-card_icon span {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
   text-align: center;
 }
 
 .social-media-card_name {
-  font-size: 14px;
-  font-weight: 600;
-  color: #2c3e50;
-  margin: 0;
-  text-align: center;
+  display: none;
 }
 
 .social-carousel_dots {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-top: 20px;
+  gap: 7px;
+  margin-top: -15px;
+  position: relative;
+  z-index: 1;
 }
 
 .social-carousel_dot {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: #ddd;
+  background: #cfcfcf;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.social-carousel_dot:hover {
-  background: #bbb;
 }
 
 .social-carousel_dot.active {
-  background: #667eea;
-  width: 24px;
-  border-radius: 4px;
+  background: #9f9f9f;
 }
 
 /* Responsive */
 @media (max-width: 1024px) {
   .partner-card {
-    flex: 0 0 calc(33.333% - 14px);
-  }
-
-  .social-media-card {
     flex: 0 0 calc(33.333% - 14px);
   }
 }
@@ -448,13 +402,11 @@
     font-size: 28px;
   }
 
-  .partners-carousel,
-  .social-carousel {
+  .partners-carousel {
     padding: 20px;
   }
 
-  .partners-carousel_title,
-  .social-carousel_title {
+  .partners-carousel_title {
     font-size: 18px;
     margin-bottom: 20px;
   }
@@ -463,19 +415,32 @@
     flex: 0 0 calc(50% - 10px);
   }
 
-  .social-media-card {
-    flex: 0 0 calc(50% - 10px);
-  }
-
-  .partner-card_logo,
-  .social-media-card_icon {
+  .partner-card_logo {
     width: 70px;
     height: 70px;
   }
 
+  .social-carousel_title {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .social-carousel_container {
+    grid-template-columns: 30px 1fr 30px;
+    padding: 0 8px;
+  }
+
+  .social-carousel_track {
+    gap: 14px;
+  }
+
+  .social-media-card {
+    flex-basis: calc(50% - 7px);
+  }
+
   .social-media-card_icon img {
-    width: 35px;
-    height: 35px;
+    width: 5vw;
+    height: 5vw;
   }
 }
 
@@ -488,8 +453,7 @@
     padding: 15px;
   }
 
-  .partners-carousel_arrow,
-  .social-carousel_arrow {
+  .partners-carousel_arrow {
     width: 36px;
     height: 36px;
     font-size: 20px;
@@ -499,23 +463,17 @@
     flex: 0 0 calc(100% - 0px);
   }
 
-  .social-media-card {
-    flex: 0 0 calc(100% - 0px);
-  }
-
-  .partner-card_logo,
-  .social-media-card_icon {
+  .partner-card_logo {
     width: 60px;
     height: 60px;
   }
 
   .social-media-card_icon img {
-    width: 30px;
-    height: 30px;
+    width: 9vw;
+    height: 9vw;
   }
 
-  .partners-carousel_container,
-  .social-carousel_container {
+  .partners-carousel_container {
     gap: 10px;
   }
 }
