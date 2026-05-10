@@ -7,6 +7,7 @@ import { About } from "./sections/about";
 import { Projects } from "./sections/projects";
 import { Gallery } from "./sections/gallery";
 import { Review } from "./sections/review";
+import { Contact } from "./sections/contact";
 
 type TabType = "feed" | "about" | "projects" | "gallery" | "review" | "contact";
 
@@ -165,33 +166,7 @@ export default function ProjectDetailsPage() {
         {activeTab === "projects" && <Projects developerId={developer.id} />}
         {activeTab === "gallery" && <Gallery developerId={developer.id} />}
         {activeTab === "review" && <Review developerId={developer.id} />}
-        {activeTab === "contact" && (
-          <section className="project-details_section">
-            <h2>Contact Information</h2>
-            <div className="project-details_contact-info">
-              <div className="contact-item">
-                <span className="contact-label">Phone:</span>
-                <span className="contact-value">{developer.contact.phone}</span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-label">Email:</span>
-                <span className="contact-value">{developer.contact.email}</span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-label">Website:</span>
-                <span className="contact-value">
-                  {developer.contact.website}
-                </span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-label">Instagram:</span>
-                <span className="contact-value">
-                  {developer.contact.instagram}
-                </span>
-              </div>
-            </div>
-          </section>
-        )}
+        {activeTab === "contact" && <Contact developerId={developer.id} />}
       </div>
     </div>
   );
