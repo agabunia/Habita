@@ -1,0 +1,141 @@
+.profile-page {
+  width: min(100% - 32px, 72rem);
+  margin: 42px auto 54px;
+  color: #242424;
+  text-align: left;
+}
+
+.profile-page_header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 28px;
+  padding-left: 16px;
+}
+
+.profile-page_avatar {
+  display: grid;
+  place-items: center;
+  width: clamp(88px, 10vw, 118px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #e0e0e0;
+  color: #7b7b7b;
+}
+
+.profile-page_user-icon {
+  width: 62%;
+  height: 62%;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.profile-page_identity h1 {
+  margin: 0 0 10px;
+  color: #161616;
+  font-size: clamp(24px, 3vw, 34px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.profile-page_identity p {
+  color: #171717;
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.2;
+}
+
+.profile-page_tabs {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 36px;
+  align-items: flex-end;
+  margin: 0 0 -1px 16px;
+}
+
+.profile-page_tab {
+  display: grid;
+  place-items: center;
+  min-width: 174px;
+  min-height: 60px;
+  padding: 0 20px;
+  border: 1px solid #bdbdbd;
+  border-radius: 16px 16px 0 0;
+  background: #ffffff;
+  color: #171717;
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.profile-page_tab-active {
+  color: #4bb3d3;
+  border-bottom-color: #ffffff;
+  box-shadow: none;
+}
+
+.profile-page_panel {
+  min-height: 714px;
+  padding: 58px 76px 66px;
+  border: 1px solid #d1d1d1;
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+}
+
+.profile-page_empty {
+  display: grid;
+  min-height: 320px;
+  place-items: center;
+  color: #8f8f8f;
+  font-size: 18px;
+}
+
+@media (max-width: 920px) {
+  .profile-page_panel {
+    padding: 40px 34px 48px;
+  }
+
+  .profile-page_tabs {
+    gap: 16px;
+  }
+
+  .profile-page_tab {
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 620px) {
+  .profile-page {
+    width: min(100% - 24px, 72rem);
+    margin-top: 28px;
+  }
+
+  .profile-page_header {
+    padding-left: 0;
+  }
+
+  .profile-page_tabs {
+    gap: 8px;
+    margin-left: 0;
+    overflow-x: auto;
+    padding-bottom: 1px;
+  }
+
+  .profile-page_tab {
+    min-width: 128px;
+    min-height: 52px;
+  }
+
+  .profile-page_panel {
+    min-height: 0;
+    padding: 24px 16px 32px;
+  }
+}
