@@ -1,4 +1,5 @@
-import { createBrowserRouter } from "react-router-dom";
+// import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import Layout from "../layouts/Layout";
 import HomePage from "../pages/home/HomePage";
 import DevelopersPage from "../pages/developers/DevelopersPage";
@@ -10,8 +11,8 @@ import MyProjectsPage from "../pages/profile/profile-projects/MyProjectsPage";
 import ProfileHistoryPage from "../pages/profile/profile-history/ProfileHistoryPage";
 import ProfileDevelopersPage from "../pages/profile/profile-developers/ProfileDevelopersPage";
 
-
-export const router = createBrowserRouter([
+// export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <Layout />,
